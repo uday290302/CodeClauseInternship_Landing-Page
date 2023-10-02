@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  z-index: 2;
+}
+
+.navbar {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav_item {
+  font-size: 2.5rem;
+  margin-right: 3rem;
+  margin: 0 4rem; 
+  color: #ffffff;
+}
+
+.nav_item:hover {
+  letter-spacing: .5rem;
+}
+
+.nav-link.active {
+  color: #000000; 
+}
+
+.header #menu {
+  display: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/tata-slide_2_1920x.webp');
+  background-size: cover;
+  background-position: auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.logoImge {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+}
+
+.logo img {
+  height: 11rem; 
+}
+
+.home .content {
+  text-align: left;
+  flex: 1 1 40rem;
+  padding-top: 10rem;
+}
+
+.home .content .title {
+  font-size: 6rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home .content .title span {
+  text-transform: uppercase;
+  color: #aa773a;
+}
+
+.home .content .description {
+  font-size: 1.9rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.home .content .btn {
+  margin-top: 5rem;
+  display: inline-block;
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #f6b775;
+  cursor: pointer;
+}
+
+.home .content .btn:hover {
+  letter-spacing: .5rem;
+}
+
+.menu {
+  background-color: #e9e5df; 
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.menu .title {
+  color: #63431e;
+  font-size: 2.5rem;
+}
+
+.menu-items {
+  flex: 1 1 calc(33.33% - 3rem);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+  
+}
+
+.menu-item {
+  flex: 1 1 calc(50% - 3rem);
+  background-color: #f6b775;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+  background-color: #faa906; 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+  
+}
+
+.menu-item img {
+  width: 85%; 
+  height: 400px; 
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+.item-title {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.item-description {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  color: #7c4600;
+}
+
+.item-price {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: #000000;
+  font-weight: 800;
+}
+
+.contact {
+  background-color: #f6b775;
+  text-align: center;
+  padding: 5rem 0;
+  min-height: 300px;
+  padding: 110px;
+}
+
+.contact .title {
+  color: #63431e;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.contact-item i {
+  font-size: 2.5rem;
+  color: #493216;
+  margin-right: 1rem;
+}
+
+.contact-item .item-text {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.follow-contact {
+  margin-top: 2rem;
+}
+
+.follow-contact p {
+  font-size: 1.8rem;
+  color: #523613;
+  font-weight: 1000;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #493216;
+  font-size: 3rem;
+  margin: 0 4rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.5);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #38250d;
+  padding: 0.4rem 0;
+  color: #fff;
+  font-size: 1.6rem;
+  
+}
